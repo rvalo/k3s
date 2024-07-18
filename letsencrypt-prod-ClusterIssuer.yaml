@@ -16,5 +16,3 @@ spec:
               name: websupport-secret
           groupName: cert-manager.io
           solverName: websupport-solver
-        ingress:
-          class: traefik

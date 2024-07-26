@@ -20,7 +20,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: traefik-metrics-service
+  name: traefik-metrics
   namespace: kube-system
   labels:
 #    app: traefik-metrics
@@ -34,7 +34,7 @@ spec:
     targetPort: traefik-metrics
     protocol: TCP
   selector:
-    app.kubernetes.io/instance: traefik
+    app.kubernetes.io/instance: traefik-kube-system
     app.kubernetes.io/name: traefik
 ---
 apiVersion: monitoring.coreos.com/v1
